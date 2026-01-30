@@ -1,1 +1,2 @@
-31768  https://github.com/prasanth-kasa/repo759
+31768  https://github.com/prasanth-kasa/repo759.git
+35579  https://github.com/KarthikRed2000/repo759.git
