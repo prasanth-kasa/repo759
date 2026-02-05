@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=task1_scaling
 #SBATCH --output=task1_output.txt
-#SBATCH --partition=me759   # Or the partition specified
+#SBATCH --partition=instruction
 #SBATCH --constraint=cpu    # Ensure we are on a CPU node
 #SBATCH --time=00:10:00     # time limit (e.g., 10 mins)
 #SBATCH --nodes=1
