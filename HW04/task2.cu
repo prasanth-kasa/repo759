@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     cudaEventCreate(&stop);
     
     cudaEventRecord(start);
-    stencil(d_image, d_mask, d_output, n, R, threads_per_block); [cite: 50]
+    stencil(d_image, d_mask, d_output, n, R, threads_per_block);
     cudaEventRecord(stop);
     cudaEventSynchronize(stop);
     
