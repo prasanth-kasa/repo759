@@ -35,7 +35,7 @@ __global__ void stencil_kernel(const float* image, const float* mask, float* out
     if (gid < n) {
         float sum = 0.0f;
         for (int j = -(int)R; j <= (int)R; ++j) {
-            sum += s_image[R + tid + j] * s_mask[j + R]; [cite: 41, 42]
+            sum += s_image[R + tid + j] * s_mask[j + R];
         }
         s_out[tid] = sum;
     }
