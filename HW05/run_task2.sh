@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=hw05_task2
-#SBATCH --partition=gpu
+#SBATCH --partition=instruction
 #SBATCH --gres=gpu:1
 #SBATCH --time=00:20:00
 #SBATCH --output=task2_results.txt
