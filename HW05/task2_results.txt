@@ -1,0 +1,132 @@
+Starting Task 2 Sweep...
+--------------------------------------------------
+--- RUNNING WITH THREADS_PER_BLOCK = 1024 ---
+Running task2 with N=1024, threads=1024
+13.8251
+0.82752
+Running task2 with N=2048, threads=1024
+5.79652
+1.8127
+Running task2 with N=4096, threads=1024
+3.42431
+0.796352
+Running task2 with N=8192, threads=1024
+-13.2813
+1.21446
+Running task2 with N=16384, threads=1024
+-96.76
+0.91136
+Running task2 with N=32768, threads=1024
+-106.838
+0.784096
+Running task2 with N=65536, threads=1024
+-116.988
+0.782368
+Running task2 with N=131072, threads=1024
+-50.5866
+0.96464
+Running task2 with N=262144, threads=1024
+4.35595
+0.767552
+Running task2 with N=524288, threads=1024
+136.622
+0.88128
+Running task2 with N=1048576, threads=1024
+-5.17223
+0.836096
+Running task2 with N=2097152, threads=1024
+-265.815
+0.875168
+Running task2 with N=4194304, threads=1024
+76.0457
+0.96656
+Running task2 with N=8388608, threads=1024
+507.36
+1.13574
+Running task2 with N=16777216, threads=1024
+953.241
+1.30893
+Running task2 with N=33554432, threads=1024
+156.79
+2.01059
+Running task2 with N=67108864, threads=1024
+2759.03
+2.38557
+Running task2 with N=134217728, threads=1024
+2889.93
+3.60688
+Running task2 with N=268435456, threads=1024
+-4647.78
+7.57536
+Running task2 with N=536870912, threads=1024
+15232.1
+21.5522
+Running task2 with N=1073741824, threads=1024
+18888.9
+34.4248
+--------------------------------------------------
+--- RUNNING WITH THREADS_PER_BLOCK = 512 ---
+Running task2 with N=1024, threads=512
+13.8251
+0.938112
+Running task2 with N=2048, threads=512
+5.79652
+0.889856
+Running task2 with N=4096, threads=512
+3.42432
+0.859456
+Running task2 with N=8192, threads=512
+-13.2813
+0.91136
+Running task2 with N=16384, threads=512
+-96.76
+0.791872
+Running task2 with N=32768, threads=512
+-106.838
+0.857056
+Running task2 with N=65536, threads=512
+-116.987
+1.9863
+Running task2 with N=131072, threads=512
+-50.5865
+0.975552
+Running task2 with N=262144, threads=512
+4.35597
+1.13322
+Running task2 with N=524288, threads=512
+136.622
+0.859456
+Running task2 with N=1048576, threads=512
+-5.17214
+0.983072
+Running task2 with N=2097152, threads=512
+-265.815
+0.969056
+Running task2 with N=4194304, threads=512
+76.0455
+0.929632
+Running task2 with N=8388608, threads=512
+507.36
+1.06726
+Running task2 with N=16777216, threads=512
+953.241
+1.30918
+Running task2 with N=33554432, threads=512
+156.789
+1.57123
+Running task2 with N=67108864, threads=512
+2759.03
+1.92621
+Running task2 with N=134217728, threads=512
+2889.93
+2.50429
+Running task2 with N=268435456, threads=512
+-4647.79
+4.32544
+Running task2 with N=536870912, threads=512
+15232.1
+18.5988
+Running task2 with N=1073741824, threads=512
+18888.9
+27.5701
+Task 2 Sweep Complete.
