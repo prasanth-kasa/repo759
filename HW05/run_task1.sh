@@ -3,6 +3,7 @@
 #SBATCH --partition=instruction
 #SBATCH --gres=gpu:1
 #SBATCH --time=00:10:00
+#SBATCH --mem=16G
 #SBATCH --output=task1_results.txt
 #SBATCH --error=task1_error.txt
 
