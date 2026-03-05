@@ -15,12 +15,10 @@ int main(int argc, char** argv) {
     size_t bytes = n * n * sizeof(float);
     float *A, *B, *C;
 
-    // Allocate managed memory [cite: 24]
     cudaMallocManaged(&A, bytes);
     cudaMallocManaged(&B, bytes);
     cudaMallocManaged(&C, bytes);
 
-    // Fill with random floats in [-1, 1] [cite: 24]
     for (int i = 0; i < n * n; ++i) {
         A[i] = -1.0f + 2.0f * (static_cast<float>(rand()) / RAND_MAX);
         B[i] = -1.0f + 2.0f * (static_cast<float>(rand()) / RAND_MAX);
@@ -30,14 +28,13 @@ int main(int argc, char** argv) {
     cublasHandle_t handle;
     cublasCreate(&handle);
 
-    // CUDA Events for timing 
     cudaEvent_t start, stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
 
     cudaEventRecord(start);
     for (int i = 0; i < n_tests; ++i) {
-        mmul(handle, A, B, C, n); // [cite: 25]
+        mmul(handle, A, B, C, n);
     }
     cudaEventRecord(stop);
     cudaEventSynchronize(stop);
@@ -45,7 +42,6 @@ int main(int argc, char** argv) {
     float milliseconds = 0;
     cudaEventElapsedTime(&milliseconds, start, stop);
 
-    // Print average time in ms 
     std::cout << milliseconds / n_tests << std::endl;
 
     cudaEventDestroy(start);
