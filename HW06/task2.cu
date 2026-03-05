@@ -24,6 +24,9 @@ int main(int argc, char** argv) {
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
 
+    scan(input, output, n, threads_per_block);
+    cudaDeviceSynchronize();
+
     cudaEventRecord(start);
     scan(input, output, n, threads_per_block);
     cudaEventRecord(stop);

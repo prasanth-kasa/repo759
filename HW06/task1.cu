@@ -32,6 +32,9 @@ int main(int argc, char** argv) {
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
 
+    mmul(handle, A, B, C, n);
+    cudaDeviceSynchronize();
+
     cudaEventRecord(start);
     for (int i = 0; i < n_tests; ++i) {
         mmul(handle, A, B, C, n);
