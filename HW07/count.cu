@@ -1,6 +1,6 @@
 #include "count.cuh"
 
-#include <thrust/constant_iterator.h>
+#include <thrust/iterator/constant_iterator.h>
 #include <thrust/reduce.h>
 #include <thrust/sort.h>
 
