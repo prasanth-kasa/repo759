@@ -1,0 +1,11 @@
+done n=1024
+done n=2048
+done n=4096
+done n=8192
+done n=16384
+done n=32768
+done n=65536
+done n=131072
+done n=262144
+done n=524288
+done n=1048576
