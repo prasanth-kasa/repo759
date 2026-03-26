@@ -2,7 +2,7 @@
 #SBATCH --job-name=hw09_p4
 #SBATCH --output=task4_sweep-%j.out
 #SBATCH --error=task4_sweep-%j.err
-#SBATCH --time=01:00:00
+#SBATCH --time=00:30:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1

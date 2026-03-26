@@ -2,7 +2,7 @@
 #SBATCH --job-name=hw09_p2
 #SBATCH --output=task2_sweep-%j.out
 #SBATCH --error=task2_sweep-%j.err
-#SBATCH --time=01:00:00
+#SBATCH --time=00:30:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=10
 #SBATCH --partition=instruction
