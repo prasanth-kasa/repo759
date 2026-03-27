@@ -41,6 +41,10 @@ int main(int argc, char *argv[]) {
 
     std::vector<float> dists(static_cast<std::size_t>(t), 0.0f);
 
+    // Warmup: pages, caches, frequency — not timed; reset dists before measured run.
+    cluster(n, static_cast<std::size_t>(t), arr.data(), centers.data(), dists.data());
+    std::fill(dists.begin(), dists.end(), 0.0f);
+
     const auto start = std::chrono::high_resolution_clock::now();
     cluster(n, static_cast<std::size_t>(t), arr.data(), centers.data(), dists.data());
     const auto end = std::chrono::high_resolution_clock::now();

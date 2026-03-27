@@ -33,6 +33,8 @@ int main(int argc, char *argv[]) {
         y[i] = dist(rng);
     }
 
+    (void)montecarlo(n, x.data(), y.data(), radius);  // warmup (not timed)
+
     const auto start = std::chrono::high_resolution_clock::now();
     const int incircle = montecarlo(n, x.data(), y.data(), radius);
     const auto end = std::chrono::high_resolution_clock::now();

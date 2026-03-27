@@ -9,8 +9,12 @@
 
 set -euo pipefail
 
+export OMP_PROC_BIND=true
+export OMP_PLACES=cores
+
 g++ task1.cpp cluster.cpp -Wall -O3 -std=c++17 -o task1 -fopenmp
 
+# Mean of 10 runs
 avg_time_ms() {
     local n_val="$1"
     local t_val="$2"

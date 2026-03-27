@@ -9,12 +9,16 @@
 
 set -euo pipefail
 
+export OMP_PROC_BIND=true
+export OMP_PLACES=cores
+
 g++ task2.cpp montecarlo.cpp -Wall -O3 -std=c++17 -o task2_nosimd -fopenmp \
     -fno-tree-vectorize -march=native -fopt-info-vec
 
 g++ task2.cpp montecarlo.cpp -Wall -O3 -std=c++17 -o task2_simd -fopenmp \
     -fno-tree-vectorize -march=native -fopt-info-vec -DMONTECARLO_USE_SIMD
 
+# Mean of 10 runs
 avg_line2() {
     local exe="$1"
     local n_val="$2"
